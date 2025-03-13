@@ -18,7 +18,7 @@ Make sure you have the following installed on your machine:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/employee-records.git
+   git clone https://github.com/sanjograiofficial/mern-stack
 
   note: make sure to change the url of all the fetch requests on client directory on 'Record.jsx' and 'RecordList.jsx' to your server's localhost.
 
