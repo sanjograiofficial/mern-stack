@@ -43,10 +43,10 @@ Make sure you have the following installed on your machine:
   cd ../client
   npm run dev
   ```
-Contributing
+#Contributing
 Feel free to contribute by opening a pull request. For major changes, please open an issue first to discuss what you would like to change.
 
-License
+#License
 This project is licensed under the MIT License.
 
 
