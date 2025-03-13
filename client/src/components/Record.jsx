@@ -7,7 +7,6 @@ export default function Record() {
     position: "",
     level: "",
   });
-  const [isNew, setIsNew] = useState(true);
   const params = useParams();
   const navigate = useNavigate();
 
@@ -16,7 +15,7 @@ export default function Record() {
       const id = params.id?.toString() || undefined;
       if (!id) return;
       const response = await fetch(
-        `http://localhost:5050/record/${params.id.toString()}`
+        `https://mern-stack-egma.onrender.com/record/${params.id.toString()}`
       );
       if (!response.ok) {
         const message = `An error has occurred: ${response.statusText}`;
@@ -49,7 +48,7 @@ export default function Record() {
     try {
       // if the id is present, we will set the URL to /record/:id, otherwise we will set the URL to /record.
       const response = await fetch(
-        `http://localhost:5050/record${params.id ? "/" + params.id : ""}`,
+        `https://mern-stack-egma.onrender.com/record${params.id ? "/" + params.id : ""}`,
         {
           // if the id is present, we will use the PATCH method, otherwise we will use the POST method.
           method: `${params.id ? "PATCH" : "POST"}`,
